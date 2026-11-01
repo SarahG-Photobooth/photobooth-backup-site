@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="Photobooth Backup: a personal photo-strip archive for a Raspberry Pi photobooth. Google Drive backup is in development.">
+  <title>Photobooth Backup — Photo strips, kept privately</title>
+  <link rel="icon" type="image/png" href="photobooth-logo.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="review-banner">PERSONAL PHOTOBOOTH BACKUP · IN DEVELOPMENT</div>
+  <header class="site-header wrap">
+    <a class="brand" href="index.html"><img class="brand-logo" src="photobooth-logo.png" alt="" width="48" height="48"> Photobooth Backup</a>
+    <nav aria-label="Main navigation"><a href="index.html" aria-current="page">Home</a><a href="privacy.html">Privacy</a></nav>
+  </header>
+  <main id="main" class="wrap">
+    <section class="hero" aria-labelledby="title">
+      <div>
+        <p class="eyebrow">A personal photo-strip archive</p>
+        <h1 id="title">Keep the strip.<br>Keep the memory.</h1>
+        <p class="intro">Photobooth Backup is being developed to save finished strips from a Raspberry Pi photobooth to its owner’s Google Drive.</p>
+        <p>One camera. One owner’s account. No public photo gallery.</p>
+        <a class="button" href="privacy.html">Read the privacy policy <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="illustration" role="img" aria-label="An illustration of two photo strips, using abstract shapes rather than real photographs">
+        <div class="strip strip-back"><i></i><i></i><i></i><span>PHOTOBOOTH</span></div>
+        <div class="strip strip-front"><i></i><i></i><i></i><span>GOOD TIMES, KEPT.</span></div>
+      </div>
+    </section>
+    <aside class="status" aria-label="Current development status"><strong>Connection setup is in progress.</strong><p>Automatic Drive uploads and 30-day local cleanup are not running yet. This page describes the planned backup service; the camera currently saves photographs and strips locally.</p></aside>
+    <section class="section" aria-labelledby="plan">
+      <p class="eyebrow">The planned workflow</p>
+      <h2 id="plan">A copy in Drive, before local cleanup.</h2>
+      <ol class="steps">
+        <li><span class="step-number" aria-hidden="true">01</span><div><h3>Save a finished strip</h3><p>The camera keeps the finished strip and its individual photographs. Only the finished strip is intended for cloud backup.</p></div></li>
+        <li><span class="step-number" aria-hidden="true">02</span><div><h3>Upload when connected</h3><p>With the owner’s permission, the service will upload to a private folder in that owner’s Drive and verify that the saved copy matches.</p></div></li>
+        <li><span class="step-number" aria-hidden="true">03</span><div><h3>Clear local copies after 30 days</h3><p>A strip and its associated individual photos will become eligible for local removal only after the retention period and a verified Drive copy. Unverified or incomplete sessions stay protected.</p></div></li>
+      </ol>
+    </section>
+    <section class="section split" aria-labelledby="control">
+      <h2 id="control">Your account.<br>Your archive.</h2>
+      <div><p>Google’s permission screen lets the owner choose whether to connect. The app requests access to files it creates or that are explicitly made available to it, rather than the entire Drive.</p><p>The planned service will not delete cloud copies. They stay in Drive until the owner removes them. If Drive is full or a backup fails, unbacked local files remain on the camera.</p><p><strong>A finished strip is not a full-resolution backup of its individual photographs.</strong> Once the approved local cleanup removes those originals, the strip is the retained image.</p></div>
+    </section>
+    <section class="contact section" aria-labelledby="contact">
+      <h2 id="contact">About this project</h2>
+      <p>A personal-use companion to the owner’s photobooth, not a public storage service. This informational website does not connect accounts or receive photo uploads.</p>
+      <p>Operated by the camera owner. For questions about this app or your data, contact <a href="mailto:sarah.connor919@gmail.com">sarah.connor919@gmail.com</a>.</p>
+    </section>
+  </main>
+  <footer class="wrap site-footer"><span>Photobooth Backup · Updated 1 November 2026</span><a href="privacy.html">Privacy policy</a></footer>
+</body>
+</html>
